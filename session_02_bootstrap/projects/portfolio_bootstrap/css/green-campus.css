@@ -1,0 +1,43 @@
+/* ==========================================================================
+   CSS DÀNH RIÊNG CHO TRANG CHI TIẾT DỰ ÁN GREEN CAMPUS
+   ========================================================================== */
+
+.project-detail-section {
+  padding: 6rem 0;
+  background-color: #ffffff; /* Nền trắng để làm nổi bật ảnh sơ đồ hệ thống */
+}
+
+.project-large-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  color: var(--green-deep);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.project-description {
+  font-family: 'Inter', sans-serif;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.project-main-img {
+  width: 100%;
+  border-radius: 12px; /* Bo tròn nhẹ góc ảnh mockup/sơ đồ */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Đổ bóng mờ mịn màng */
+}
+
+/* Badge hiển thị vai trò BA nổi bật tinh tế */
+.project-role-badge {
+  display: inline-block;
+  background-color: rgba(30, 50, 40, 0.06); /* Màu xanh lục nhạt nhẹ */
+  color: var(--green-deep);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; /* Viết hoa chữ để trông giống tag profile chuyên nghiệp */
+  letter-spacing: 0.5px;
+}

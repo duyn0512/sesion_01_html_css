@@ -10,14 +10,14 @@
 
     <script>
         /*Bài 0.1 - Chào thế giới */
-        console.log("BÀI 01: CHÀO THẾ GIỚI\n");
+        console.log("BÀI 0.1: CHÀO THẾ GIỚI\n\n");
 
         console.log("Xin chào thế giới!");
         console.log("Tôi đang học JavaScript");
         console.log(2026);
 
         /*Bài 0.2 - Khai báo biến*/
-        console.log("\nBÀI 02: KHAI BÁO BIẾN\n");
+        console.log("\nBÀI 0.2: KHAI BÁO BIẾN\n\n");
 
         let ten = "Minh";
         let tuoi = 20;
@@ -39,7 +39,8 @@
         var monHoc = "CSE391";
         console.log("Môn:", monHoc);
 
-        console.log("\nBÀI 03: CÁC KIỂU DỮ LIỆU\n");
+        /*Bài 0.3 - Các kiểu dữ liệu*/
+        console.log("\nBÀI 0.3: CÁC KIỂU DỮ LIỆU\n\n");
 
         let hoTen = "Nguyễn Văn A";     
         let diaChi = 'Hà Nội';          
@@ -74,7 +75,7 @@
             Bài tập con 0.3 — Khai báo biến cho các thông tin và in ra console
         */
 
-        console.log("\n\nBài 0.3 — Khai báo các biến cho các thông tin và in ra console");
+        console.log("\nBài tập con 0.3 — Khai báo các biến cho các thông tin và in ra console\n\n");
 
         let tenMonHoc = "JavaScript";
         let soTinChi = 3;
@@ -85,6 +86,45 @@
         console.log("Số tín chỉ:", soTinChi);
         console.log("Bắt buộc:", laMonBatBuoc);
         console.log("Điểm số:", diemSo);
+
+        /*Bài 0.4 - Template Literal*/
+        console.log("\nBÀI 0.4: TEMPLATE LITERAL\n\n");
+
+        let ho = "Nguyễn";
+        let Ten = "Minh";
+        let Tuoi = 20;
+        let diem = 8.5;
+
+        let cau1 = "Tên: " + ho + " " + ten + ", Tuổi: " + tuoi;
+        console.log(cau1);
+
+        let cau2 = `Tên: ${ho} ${ten}, Tuổi: ${tuoi}`;
+        console.log(cau2);
+
+        let cau3 = `${ho} ${ten} được ${diem} điểm. Năm sau ${ten} sẽ ${tuoi + 1} tuổi.`;
+        console.log(cau3);
+
+        let thongBao = `
+        === THÔNG TIN SINH VIÊN ===
+        Họ tên : ${ho} ${ten}
+        Tuổi    : ${tuoi}
+        Điểm    : ${diem}
+        Xếp loại: ${diem >= 8 ? "Giỏi" : diem >= 6.5 ? "Khá" : "Trung bình"}
+        ===========================
+        `;
+        console.log(thongBao);
+
+        /*
+            Bài tập con 0.4: Tạo chuỗi template hiển thị hoá đơn mua hàng
+        */
+        console.log("\nBài tập con 0.4 - Tạo chuỗi template hiển thị hoá đơn mua hàng\n\n");
+        let sanPham = "Laptop";
+        let soLuong = 2;
+        let donGia = 15000000;
+
+        let hoaDon = `Hóa đơn: ${soLuong} x ${sanPham} = ${(soLuong * donGia).toLocaleString()} VNĐ`;
+
+        console.log(hoaDon);
 
     </script>
 </body>

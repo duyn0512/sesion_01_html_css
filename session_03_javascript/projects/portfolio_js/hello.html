@@ -126,6 +126,92 @@
 
         console.log(hoaDon);
 
+        /*Bài 0.5 - Toán tử số học */
+        console.log("\nBÀI 0.5: TOÁN TỬ SỐ HỌC\n\n")
+
+        let a = 15;
+        let b = 4;
+
+        console.log(`${a} + ${b} =`, a + b);    
+        console.log(`${a} - ${b} =`, a - b);    
+        console.log(`${a} * ${b} =`, a * b);    
+        console.log(`${a} / ${b} =`, a / b);    
+        console.log(`${a} % ${b} =`, a % b);    
+        console.log(`${a} ** ${b} =`, a ** b);
+
+        let x = 10;
+        x += 5;   
+        x -= 3;   
+        x *= 2;   
+        x /= 4;   
+        console.log("x =", x);  
+
+        let dem = 0;
+        dem++;     
+        dem++;     
+        dem--;    
+        console.log("dem =", dem);  
+
+        /*
+            Bài tập con 0.5 - Tính diện tích hình tròn
+        */
+        console.log("\nBài tập con 0.5 - Tính diện tích hình tròn\n\n")
+
+        let banKinh = 5;
+
+        let dienTich = PI * banKinh ** 2;
+        let chuVi = 2 * PI * banKinh;
+
+        console.log("Bán kính =", banKinh);
+        console.log("Diện tích =", dienTich);
+        console.log("Chu vi =", chuVi);
+
+        /*Bài 0.6 - Toán tử so sánh*/
+        console.log("\nBÀI 0.6: TOÁN TỬ SO SÁNH\n\n")
+
+        console.log(5 == "5");      
+        console.log(5 === "5");     
+        console.log(true == 1);     
+        console.log(true === 1);    
+
+        console.log(10 > 5);        
+        console.log(10 < 5);        
+        console.log(10 >= 10);      
+        console.log(10 <= 9);       
+        console.log(10 != 5);       
+        console.log(10 !== "10");   
+
+        console.log(true && true);   
+        console.log(true && false); 
+        console.log(true || false);  
+        console.log(false || false); 
+        console.log(!true);         
+
+        /*
+            Bài tập con 0.6 - Kiểm tra điều kiện
+        */
+        console.log("\nBài tập con 0.6 - Kiểm tra điều kiện\n\n")
+        
+        let Diem = 7.5;
+        let diemChuyenCan = 9;
+
+        console.log("--- KẾT QUẢ ĐIỀU KIỆN ĐẠT ---");
+        if(Diem >= 5 && diemChuyenCan >= 8)
+            console.log("Đạt")
+        else
+            console.log("Không đạt")
+
+        console.log("\n--- KẾT QUẢ XẾP LOẠI HỌC LỰC ---");
+        if(Diem >= 8.5)
+            console.log("Giỏi");
+        else if(Diem >= 7)
+            console.log("Khá");
+        else if(Diem >= 5)
+            console.log("Trung bình")
+        else
+            console.log("Yếu");
+    
+        
     </script>
 </body>
 </html>

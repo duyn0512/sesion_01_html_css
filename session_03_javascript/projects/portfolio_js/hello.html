@@ -211,7 +211,60 @@
         else
             console.log("Yếu");
     
-        
-    </script>
+        /*Bài 0.7 - Kiểm tra dữ liệu Array */
+        console.log("\nBÀI 0.7: KIỂM TRA DỮ LIỆU ARRAY\n\n");
+
+        let MonHoc = ["Toán", "Lý", "Hóa", "Sinh"];
+        let DiemSo = [8, 7, 9, 6.5, 8.5];
+        let honHop = ["Minh", 20, true, null]; 
+
+        console.log(MonHoc[0]);    
+        console.log(MonHoc[1]);   
+        console.log(MonHoc.length); 
+        console.log(MonHoc[monHoc.length - 1]); 
+
+        MonHoc.push("Anh");        
+        MonHoc.pop();               
+        MonHoc.unshift("GDCD");  
+        MonHoc.shift();            
+
+        for (let i = 0; i < DiemSo.length; i++) {
+            console.log(`Môn ${i + 1}: ${DiemSo[i]} điểm`);
+        }
+
+        DiemSo.forEach((diem, index) => {
+            console.log(`Môn ${index + 1}: ${diem} điểm`);
+        });
+
+        console.log(MonHoc.includes("Lý"));   
+        console.log(MonHoc.indexOf("Hóa"));  
+        console.log(MonHoc.indexOf("Anh"));   
+
+        let so = [3, 1, 4, 1, 5, 9, 2, 6];
+        so.sort((a, b) => a - b);  
+        console.log(so);
+
+        /*
+            Bài tập con 0.7 - Kiểm tra dữ liệu Array
+        */
+        console.log("\nBài tập con 0.7 - Kiểm tra dữ liệu Array\n\n");
+
+        let monAn = ["Phở", "Bún trả", "Pizza", "Sushi", "Gà rán"];
+
+        console.log("Món đầu: ", monAn[0]);
+        console.log("Món cuối: ", monAn[monAn.length - 1]);
+
+        monAn.unshift("Cơm tấm");
+
+        monAn.pop();
+
+        monAn.forEach((mon, index) => {
+            console.log(`Món ${index +1}: ${mon}`);
+        });
+
+        console.log("Có Phở không?", monAn.includes("Phở"));
+
+    </script> 
+
 </body>
 </html>
